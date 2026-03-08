@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Crop Recommendation</title>
+    <meta charset="UTF-8" />
+    <title>AI Crop Recommendation System</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
+
   <body>
-    <h2>AI Crop Recommendation System</h2>
+    <div class="overlay">
+      <div class="container">
+        <h1>🌱 Crop Recommendation</h1>
 
-    <form action="/predict" method="post">
-      <label>Nitrogen:</label>
-      <input type="number" name="N" /><br /><br />
+        <form action="/predict" method="post">
+          <label>Nitrogen (N)</label>
+          <input type="number" name="N" required />
 
-      <label>Phosphorus:</label>
-      <input type="number" name="P" /><br /><br />
+          <label>Phosphorus (P)</label>
+          <input type="number" name="P" required />
 
-      <label>Potassium:</label>
-      <input type="number" name="K" /><br /><br />
+          <label>Potassium (K)</label>
+          <input type="number" name="K" required />
 
-      <label>Temperature:</label>
-      <input type="number" step="any" name="temperature" /><br /><br />
+          <label>Temperature (°C)</label>
+          <input type="number" step="any" name="temperature" required />
 
-      <label>Humidity:</label>
-      <input type="number" step="any" name="humidity" /><br /><br />
+          <label>Humidity (%)</label>
+          <input type="number" step="any" name="humidity" required />
 
-      <label>pH:</label>
-      <input type="number" step="any" name="ph" /><br /><br />
+          <label>Soil pH</label>
+          <input type="number" step="any" name="ph" required />
 
-      <label>Rainfall:</label>
-      <input type="number" step="any" name="rainfall" /><br /><br />
+          <label>Rainfall (mm)</label>
+          <input type="number" step="any" name="rainfall" required />
 
-      <input type="submit" value="Predict Crop" />
-    </form>
+          <button type="submit">Predict Best Crop 🌾</button>
+        </form>
+
+        <div class="footer">AI Based Crop Recommendation System</div>
+      </div>
+    </div>
   </body>
 </html>
