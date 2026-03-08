@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crop Recommendation</title>
+  </head>
+  <body>
+    <h2>AI Crop Recommendation System</h2>
+
+    <form action="/predict" method="post">
+      <label>Nitrogen:</label>
+      <input type="number" name="N" /><br /><br />
+
+      <label>Phosphorus:</label>
+      <input type="number" name="P" /><br /><br />
+
+      <label>Potassium:</label>
+      <input type="number" name="K" /><br /><br />
+
+      <label>Temperature:</label>
+      <input type="number" step="any" name="temperature" /><br /><br />
+
+      <label>Humidity:</label>
+      <input type="number" step="any" name="humidity" /><br /><br />
+
+      <label>pH:</label>
+      <input type="number" step="any" name="ph" /><br /><br />
+
+      <label>Rainfall:</label>
+      <input type="number" step="any" name="rainfall" /><br /><br />
+
+      <input type="submit" value="Predict Crop" />
+    </form>
+  </body>
+</html>
