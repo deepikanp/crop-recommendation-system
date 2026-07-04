@@ -160,7 +160,7 @@ The project uses:
 # 👩‍💻 Author
 
 Deepika N P
-B.E Information Technology Student
+B.Tech Information Technology Student
 VSB Engineering College, India
 
 ---
